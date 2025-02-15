@@ -11,8 +11,11 @@ const ProductList = ({debounceSearchTerm}) => {
     products, 
     loading, 
     error,
-    // TODO: Exercice 4.1 - Récupérer la fonction de rechargement
-    // TODO: Exercice 4.2 - Récupérer les fonctions et états de pagination
+    reload,
+    totalPages,
+    currentPage,
+    previousPage,
+    nextPage
   } = useProductSearch();
   
   if (loading) return (
@@ -31,7 +34,11 @@ const ProductList = ({debounceSearchTerm}) => {
   
   return (
     <div>
-      {/* TODO: Exercice 4.1 - Ajouter le bouton de rechargement */}
+      <div className='mb-3'>
+        <button className='btn btn-secondary' onClick={reload}>
+          {language == "Fr" ? "Recharger" : "Reload"}
+        </button>
+      </div>
       <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
         {(debounceSearchTerm != '' ? products.filter(p=>p.title.toLowerCase().includes(debounceSearchTerm.toLowerCase())) : products).map(product => (
           <div key={product.id} className="col">
@@ -56,9 +63,7 @@ const ProductList = ({debounceSearchTerm}) => {
           </div>
         ))}
       </div>
-      
-      {/* TODO: Exercice 4.2 - Ajouter les contrôles de pagination */}
-      {/* Exemple de structure pour la pagination :
+
       <nav className="mt-4">
         <ul className="pagination justify-content-center">
           <li className="page-item">
@@ -78,7 +83,6 @@ const ProductList = ({debounceSearchTerm}) => {
           </li>
         </ul>
       </nav>
-      */}
     </div>
   );
 };

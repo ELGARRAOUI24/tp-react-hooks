@@ -92,7 +92,6 @@ Pour chaque exercice :
 
 ##### 3.2 Créer le hook useLocalStorage
 - 1- Création d'un nouveau hook personnalisé pour interagir facilement avec le localStorage.
-```
 
 ### Exercice 4 : Gestion Asynchrone et Pagination
 #### Objectif : Gérer le chargement et la pagination
@@ -101,15 +100,6 @@ Pour chaque exercice :
 - [ ] 4.2 Implémenter la pagination
 - [ ] 4.3 Documenter votre solution ici
 
-_Votre réponse pour l'exercice 4 :_
-```
-Expliquez votre solution ici
-[Ajoutez vos captures d'écran]
-```
-
-## Rendu
-
-- Ajoutez l'URL de votre dépôt Github dans  **Classroom** et envoyer la réponse dès le démarage de votre projet.
-- Les push doivent se faire au fûr et à mesure que vous avancez dans votre projet.
-- Le README.md doit être à jour avec vos réponses et captures d'écran. 
-- Chaques exercice doit faire l'objet d'au moins un commit avec un message mentionnant le numéro de l'exercice.
+#### réponse pour l'exercice 4 :
+- 1- Ajout d'un bouton pour recharger les produits de la page
+- 2- Implémentation de la pagination
