@@ -77,10 +77,6 @@ Pour chaque exercice :
 - 2- Création d'un nouvau component pour ajouter la possibilité de changer la langue
 - 3- Utilisation du state "language" via le context pour afficher les phrases correspondentes à la langue choisie par l'utilisateur.
 ![alt text](captures/ex2-image1.png)
-```
-Expliquez votre solution ici
-[Ajoutez vos captures d'écran]
-```
 
 ### Exercice 3 : Hooks Personnalisés
 #### Objectif : Créer des hooks réutilisables
@@ -89,10 +85,10 @@ Expliquez votre solution ici
 - [ ] 3.2 Créer le hook useLocalStorage
 - [ ] 3.3 Documenter votre solution ici
 
-_Votre réponse pour l'exercice 3 :_
-```
-Expliquez votre solution ici
-[Ajoutez vos captures d'écran]
+#### réponse pour l'exercice 3 :
+##### 3.1 Créer le hook useDebounce
+- 1- Création un hook pérsonnalisé nommé "useDebounce" avec un timer paramétré pour limiter la fréquence d'exécution d'une fonction
+- 2- Utilisation le nouvaue hook pérsonnalisée pour limiter la fréquence d'exécution du filtre sur la liste des produit.
 ```
 
 ### Exercice 4 : Gestion Asynchrone et Pagination

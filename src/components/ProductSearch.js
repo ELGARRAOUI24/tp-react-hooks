@@ -1,18 +1,14 @@
 import React, { useEffect, useContext } from 'react';
 import { ThemeContext } from '../App';
 import { LanguageContext } from '../App';
+import useDebounce from '../hooks/useDebounce';
 
 const ProductSearch = ({searchTerm ,setSearchTerm ,setDebounceSearchTerm}) => {
   const { isDarkTheme } = useContext(ThemeContext);
   const { language } = useContext(LanguageContext);
   
-  // un UseEffect avec un timer pour limiter la fréquence de changement du state "debounceSearchTerm" lorque "searchTerm" changé
-  useEffect(()=>{
-    const timer = setTimeout(()=>{
-      setDebounceSearchTerm(searchTerm)
-    }, 500);
-    return ()=>clearTimeout(timer);
-  },[searchTerm]);
+  // utilisation le nouveau hook "useDebounce" avec un timer pour limiter la fréquence de changement du state "debounceSearchTerm" lorque "searchTerm" changé
+  useDebounce(searchTerm, 500, setDebounceSearchTerm);
   
   return (
     <div className="mb-4">
