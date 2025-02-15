@@ -61,6 +61,9 @@ Pour chaque exercice :
 
 ##### 1-2 : L'implémentation d'un debounce sur la recherche :
 - L'utilisation d'un useEffect afin d'ajouter un debounce qui permet de limiter la fréquence d'executer une fonction par un timer personnalisé.
+
+##### 1-3 : Documentation de la solution :
+- Commentaire sur l'ensemble des modification apportées pour resoudre l'exercice N° 1.
 ```
 
 

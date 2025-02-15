@@ -9,10 +9,13 @@ export const ThemeContext = createContext();
 
 const App = () => {
   const [isDarkTheme, setIsDarkTheme] = useState(false);
+  // le state "searchTerm" déclaré ici pour l'utilise dans les componants fils
   const [searchTerm, setSearchTerm] = useState('');
+  // le state "debounceSearchTerm" pour l'utilisation dans la recherche sur le componant "ProductList"
   const [debounceSearchTerm, setDebounceSearchTerm] = useState('');
   // TODO: Exercice 2.2 - Ajouter l'état pour la langue
 
+  // un UseEffect avec un timer pour limiter la fréquence de changement du state "debounceSearchTerm" lorque "searchTerm" changé
   useEffect(()=>{
     const timer = setTimeout(()=>{
       setDebounceSearchTerm(searchTerm)
@@ -32,7 +35,11 @@ const App = () => {
           </div>
         </header>
         <main>
+          {/* Envoi la méthode "setSearchTerm" comme un parametre pour le componant "ProductSearch" afin de 
+          l'utiliser pour changer la valeur du state "searchTerm" par les données saisies par l'utilisateur */}
           <ProductSearch setSearchTerm={setSearchTerm} />
+          {/* Envoi le state "debounceSearchTerm" comme un parametre pour le composant "ProductList" afin de 
+          l'utiliser pour filter dans la liste des produits*/}
           <ProductList debounceSearchTerm={debounceSearchTerm} />
         </main>
       </div>
