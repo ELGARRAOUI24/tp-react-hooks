@@ -89,6 +89,9 @@ Pour chaque exercice :
 ##### 3.1 Créer le hook useDebounce
 - 1- Création un hook pérsonnalisé nommé "useDebounce" avec un timer paramétré pour limiter la fréquence d'exécution d'une fonction
 - 2- Utilisation le nouvaue hook pérsonnalisée pour limiter la fréquence d'exécution du filtre sur la liste des produit.
+
+##### 3.2 Créer le hook useLocalStorage
+- 1- Création d'un nouveau hook personnalisé pour interagir facilement avec le localStorage.
 ```
 
 ### Exercice 4 : Gestion Asynchrone et Pagination
