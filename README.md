@@ -64,8 +64,6 @@ Pour chaque exercice :
 
 ##### 1-3 : Documentation de la solution :
 - Commentaire sur l'ensemble des modification apportées pour resoudre l'exercice N° 1.
-```
-
 
 ### Exercice 2 : Context et Internationalisation
 #### Objectif : Gérer les préférences de langue
@@ -74,7 +72,11 @@ Pour chaque exercice :
 - [ ] 2.2 Ajouter le sélecteur de langue
 - [ ] 2.3 Documenter votre solution ici
 
-_Votre réponse pour l'exercice 2 :_
+#### réponse pour l'exercice 2 :
+- 1- Déclaration d'un context pour gérer la langue d'ffichage
+- 2- Création d'un nouvau component pour ajouter la possibilité de changer la langue
+- 3- Utilisation du state "language" via le context pour afficher les phrases correspondentes à la langue choisie par l'utilisateur.
+![alt text](captures/ex2-image1.png)
 ```
 Expliquez votre solution ici
 [Ajoutez vos captures d'écran]
