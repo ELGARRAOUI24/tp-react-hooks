@@ -51,14 +51,18 @@ Pour chaque exercice :
 - [ ] 1.2 Implémenter le debounce sur la recherche
 - [ ] 1.3 Documenter votre solution ici
 
-réponse pour l'exercice 1 :
-Les modification apportées pour ce exercice sont :
-1- Déclaration un state "searchTerm" dans la classe mère "APP" pour gérer la recherche par des mots clé.
-2- Envoie la méthde "setSearchTerm" comme prpos au composant "ProductSearch" afin de l'utiliser pour modifier la valeur du state "searchTerm".
-3- enoie le state "searchTerm" comme props au composant "ProductList" pour faire un filtre sur la liste des produit existe dans la variable "products" retournée par le hook "useProductSearch".
+#### réponse pour l'exercice 1 :
+##### 1-1 : Les modification apportées pour ce exercice sont :
+- 1- Déclaration un state "searchTerm" dans la classe mère "APP" pour gérer la recherche par des mots clé.
+- 2- Envoie la méthde "setSearchTerm" comme prpos au composant "ProductSearch" afin de l'utiliser pour modifier la valeur du state "searchTerm".
+- 3- enoie le state "searchTerm" comme props au composant "ProductList" pour faire un filtre sur la liste des produit existe dans la variable "products" retournée par le hook "useProductSearch".
 ![alt text](captures/ex1-image1.png)
 ![alt text](captures/ex1-image2.png)
+
+##### 1-2 : L'implémentation d'un debounce sur la recherche :
+- L'utilisation d'un useEffect afin d'ajouter un debounce qui permet de limiter la fréquence d'executer une fonction par un timer personnalisé.
 ```
+
 
 ### Exercice 2 : Context et Internationalisation
 #### Objectif : Gérer les préférences de langue
